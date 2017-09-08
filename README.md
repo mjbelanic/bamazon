@@ -19,13 +19,17 @@ MySQL database consists of two tables: products and departments. The products ta
 
 When Bamazon Customer is called using node bamazonCustomer.js , the program begins by creating a connection to the MySQL database that matches the information provided in the createConntection function. Once the connection has been created, the first call to the database is made to retrieve the list of products stored in the products table of the database. To log these to the terminal, a for loop iterates through the results that are returned.
 
-![Products displayed in terminal window](./BamazonImages/bamazonCustomer-image1.png?raw=true)
+Products displayed in terminal window:
+![Products displayed in terminal window](./BamazonImages/bamazonCustomer-image1.png?raw=true "Products displayed in terminal window")
 
-Once the results have been displayed, an inquirer prompt appears asking the usser for the id of the product they wish to purchase. Another prompt appears once this value has been entered asking for the total number they wish to purchase.
+Once the results have been displayed, an inquirer prompt appears asking the usser for the id of the product they wish to purchase. Another prompt appears once this value has been entered asking for the total number they wish to purchase. After both of those prompts have been completed the stock quantity of the product the user wants to purchase is checked, if the customer's demand is greater than the stock remaining, an error message appears and the program is exited. If there are enough of the product in store to fullfill the customer's order, these items are put in an object called orderInformation using a constructor. A final prompt to confirm the order is presented to  user. If the user does not confirm, the process restarts. If the user does confirm, then another call to the database is made to update the product's quantity and sales.
 
-After both of those prompts have been completed the stock quantity of the product the user wants to purchase is checked, if the customer's demand is greater than the stock remaining, an error message appears and the program is exited. If there are enough of the product in store to fullfill the customer's order, these items are put in an object called orderInformation using a constructor.
-
-A final prompt to confirm the order is presented to  user. If the user does not confirm, the process restarts. If the user does confirm, then another call to the database is made to update the product's quantity and sales. 
+Default Values in Products Table:
+![Default Values in Products Table](./BamazonImages/bamazonCustomer-image2.png?raw=true)
+User Enters Values:
+![User Enters Values](./BamazonImages/bamazonCustomer-image3.png?raw=true)
+Updated Products Table after running BamazonCustomer.js:
+![Updated Products Table after running BamazonCustomer.js](./BamazonImages/bamazonCustomer-image4.png?raw=true)
 
 *Bamazon Manager*
 
