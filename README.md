@@ -1,13 +1,13 @@
-#BAMAZON
+# BAMAZON
 
 By: Matthew Belanic
 9/8/2017
 
-##Introduction
+## Introduction
 
 This project is a basic simulation of Amazon shopping and database management. This was completed using Node.JS for both front-end and back-end functionality and MySQL database to hold data. There are three primary functions of the application: customer, manager, and supervisor. Each role has different options and actions they can take.
 
-##Resources used:
+## Resources used:
 
 Node.JS
 MySQL
@@ -15,11 +15,11 @@ NPM Inquirer
 NPM MySQL
 NPM cli-table
 
-##MySQL Tables
+## MySQL Tables
 
 MySQL database consists of two tables: products and departments. The products table provides an overview of the information about products the store sells including product name, the department it is in and the product's price. The department table provides information on the specific departments which sells each product. This table includes information like the departments name and its overhead cost.
 
-##Bamazon Customer
+## Bamazon Customer
 
 When Bamazon Customer is called using node bamazonCustomer.js , the program begins by creating a connection to the MySQL database that matches the information provided in the createConntection function. Once the connection has been created, the first call to the database is made to retrieve the list of products stored in the products table of the database. To log these to the terminal, a for loop iterates through the results that are returned.
 
@@ -37,7 +37,7 @@ User Enters Values:
 Updated Products Table after running BamazonCustomer.js:
 ![Updated Products Table after running BamazonCustomer.js](./BamazonImages/bamazonCustomer-image4.png?raw=true)
 
-##Bamazon Manager
+## Bamazon Manager
 
 The bamazon manager has multiple functions it can call. When the program starts a connection to the MySQL database is made and an inquirer prompt asks the user what they want to do using a list type question with the options: "View Products for Sale", "View Low Inventory", "Add to inventory", and "Add New Product". 
 
@@ -73,7 +73,7 @@ If "Add New Product" is chosen by the user, a new function is also called within
 New product appears in database with user entered data:
 ![Product Added in Database](./BamazonImages/bamazonManager-image8.png?raw=true)
 
-##Bamazon Supervisor
+## Bamazon Supervisor
 
 The bamazon supervisor functions similarly to the bamazon manager, however the supervisor only has two options: "View Product Sales by Department" and "Create New Department".  
 
