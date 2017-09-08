@@ -53,7 +53,7 @@ Only products with a stock_quantity of 5 or less appear:
 
 When the user selects "Add to Inventory", a new function is called within the program. This function begins by prompting the user with two questions. The first question seeks to get the Id of the product they wish to add more stock to and the second question asks how much stock they would like to add. If the user enters appropriate information (Example: Ids that don't exists or a stock that is negative), then an update query will be made to the database and the stock quantity will be increased by the amount specified by the second prompt.
 
-Table values before running "Add to Inventory"1:
+Table values before running "Add to Inventory":
 ![Values in product table before running "Add to Inventory"](./BamazonImages/bamazonManager-image3.png?raw=true)
 
 Values entered in terminal:
