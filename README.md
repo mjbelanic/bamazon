@@ -19,8 +19,7 @@ MySQL database consists of two tables: products and departments. The products ta
 
 When Bamazon Customer is called using node bamazonCustomer.js , the program begins by creating a connection to the MySQL database that matches the information provided in the createConntection function. Once the connection has been created, the first call to the database is made to retrieve the list of products stored in the products table of the database. To log these to the terminal, a for loop iterates through the results that are returned.
 
-![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
-![Products displayed in terminal window](./BAMAZON/bamazonCustomer-image1.png?raw=true)
+![Products displayed in terminal window](./BamazonImages/bamazonCustomer-image1.png?raw=true)
 
 Once the results have been displayed, an inquirer prompt appears asking the usser for the id of the product they wish to purchase. Another prompt appears once this value has been entered asking for the total number they wish to purchase.
 
